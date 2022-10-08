@@ -1,6 +1,8 @@
 :root {
-  --heading-font-size: 55px;
-  --heading-color: #4b4877;
+  --heading-font-size: 60px;
+  --primary-color: #4b4877;
+  --secondary-color: #7d77a6;
+  --hover-color: #bcc4db;
 }
 body {
   height: 100%;
@@ -17,26 +19,46 @@ body {
     radial-gradient(circle at 50% 50.04%, #adc6e3, transparent 100%),
     radial-gradient(circle at 50% 50%, #99a0cb, #99a0cb 100%);
 }
-
-.main-page {
+.star-symbol-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 50px;
+  line-height: 125%;
+  color: white;
+  margin-top: 150px;
+  margin-left: 110px;
+}
+.star-symbol-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 50px;
+  line-height: 125%;
+  color: white;
+  margin-bottom: 150px;
+  margin-right: 110px;
+}
+.home-page {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
   height: 100vh;
 }
-.intro {
+h1 {
   margin-top: 35px;
   font-family: "DM Serif Text";
   font-style: normal;
   font-weight: 400;
-  font-size: 60px;
+  font-size: var(--heading-font-size);
   text-align: center;
   line-height: 75px;
 
-  color: var(--heading-color);
+  color: var(--primary-color);
 }
-.intro-desc {
+
+.description {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
@@ -46,7 +68,6 @@ body {
   color: #7d77a6;
 }
 .profile-pic {
-  /* position: relative; */
   object-fit: cover;
   width: 179px;
   height: 226px;
@@ -64,12 +85,11 @@ body {
   transform: rotate(35deg);
   top: 0;
 }
-.main-page .arrow {
+.home-page .arrow {
   animation-name: floating;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-left: 30px;
   margin-top: 5px;
 }
 
@@ -84,16 +104,59 @@ body {
     transform: translate(0, -0px);
   }
 }
-
 #arrow-down {
   font-size: 40px;
   line-height: 45px;
   text-align: center;
   margin-bottom: 30px;
 
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   color: rgba(255, 255, 255, 0.9);
+}
+
+.project-summary {
+  background-color: white;
+  width: 100%;
+  padding: 100px;
+}
+.summary-heading {
+  padding: 100px;
+}
+.project-thumbnail {
+  box-sizing: border-box;
+  object-fit: cover;
+  text-align: left;
+
+  border: 8px solid #ffffff;
+  border-radius: 12px;
+}
+h2 {
+  margin-top: 35px;
+  font-family: "DM Serif Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 75px;
+
+  color: var(--primary-color);
+}
+p {
+  font-family: "Nunito";
+  font-size: 25px;
+  color: var(--primary-color);
+}
+a .github-icon,
+a .ext-icon {
+  font-size: 30px;
+  color: var(--primary-color);
+}
+.github-icon:hover,
+.ext-icon:hover {
+  color: var(--hover-color);
+}
+#project-content {
+  padding: 0;
 }
