@@ -275,6 +275,7 @@ a.open-source-link:hover {
   }
   .footer-text {
     white-space: normal;
+    margin-bottom: 0;
   }
 }
 
