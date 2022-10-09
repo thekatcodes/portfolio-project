@@ -2,7 +2,11 @@
   --heading-font-size: 60px;
   --primary-color: #4b4877;
   --secondary-color: #7d77a6;
-  --hover-color: #bcc4db;
+  --hover-color: #a2aad0;
+  --icon-spacing: 15px;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   height: 100%;
@@ -27,8 +31,12 @@ body {
   font-family: "DM Serif Text";
   letter-spacing: 1px;
 }
+.navbar-light .navbar-toggler {
+  color: white;
+  border-color: white;
+}
 .navbar-nav {
-  padding-left: 50px;
+  padding-left: 10px;
 }
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
@@ -133,12 +141,14 @@ div .intro-divide-line {
   right: 0;
   color: rgba(255, 255, 255, 0.9);
 }
-
+a.arrow-link {
+  color: white;
+}
 .project-summary {
   background-color: white;
   width: 100%;
 }
-.summary-heading {
+#summary-title {
   padding: 100px;
 }
 h1 .summary-header-line {
@@ -164,23 +174,21 @@ p {
   font-size: 25px;
   color: var(--primary-color);
 }
-a:link {
-  text-decoration: none;
+.link-icons {
+  word-spacing: var(--icon-spacing);
 }
-a .github-icon,
-a .ext-icon,
-a .fa-linkedin,
-a .fa-envelope,
-a .fa-file-lines {
+.github-icon,
+.ext-icon,
+.fa-linkedin,
+.fa-envelope,
+.fa-file-lines {
   font-size: 30px;
   color: var(--primary-color);
 }
 .github-icon:hover,
-.ext-icon:hover,
-.fa-linkedin:hover,
-.fa-envelope:hover,
-.fa-file-lines:hover {
+.ext-icon:hover {
   color: var(--hover-color);
+  transition: all 100ms ease-in-out;
 }
 #project-content {
   padding: 0;
@@ -237,13 +245,21 @@ a.open-source-link {
   color: var(--primary-color);
 }
 a.open-source-link:hover {
-  color: var(--hover-color);
-  transition: all 150ms ease-in-out;
+  color: white;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
 }
 .footer-icons {
   text-align: right;
   font-size: 30px;
-  word-spacing: 15px;
+  word-spacing: var(--icon-spacing);
+}
+.footer-github:hover,
+.footer-linkedin:hover,
+.footer-email:hover,
+.footer-cv:hover {
+  color: white !important;
+  transition: all 100ms ease-in-out;
 }
 .footer-container {
   width: 100%;
@@ -259,5 +275,36 @@ a.open-source-link:hover {
   }
   .footer-text {
     white-space: normal;
+  }
+}
+
+@media (max-width: 767px) {
+  h1,
+  h2 {
+    font-size: 30px;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .description,
+  .footer-text {
+    font-size: 16px;
+  }
+  #summary-title {
+    padding-bottom: 0;
+    padding-top: 50px;
+  }
+  .link-icons {
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  #project-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  p {
+    font-size: 15px;
   }
 }
