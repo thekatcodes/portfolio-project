@@ -215,6 +215,7 @@ p {
 
 .btn-portfolio {
   margin: 90px auto;
+  margin-bottom: 50px;
   font-family: "Nunito";
   font-size: 20px;
   line-height: 22px;
@@ -232,6 +233,33 @@ p {
 #portfolio-btn-link {
   text-decoration: none;
   color: white;
+}
+.scroll-top {
+  display: block;
+  text-align: right;
+  margin-right: 20px;
+  font-size: 45px;
+  opacity: 0.5;
+}
+.scroll-top .to-top {
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-bottom: 25px;
+  color: var(--secondary-color);
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 .footer {
   padding: 15px;
