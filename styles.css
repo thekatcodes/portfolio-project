@@ -202,7 +202,8 @@ p {
   color: var(--primary-color);
 }
 .about-desc {
-  max-width: 1000px;
+  max-width: 850px;
+  padding-left: 25px;
 }
 .link-icons {
   word-spacing: var(--icon-spacing);
@@ -292,9 +293,6 @@ p {
     transform: translate(0, -0px);
   }
 }
-/* p {
-  text-align: center;
-} */
 .footer {
   padding: 15px;
   border-top: 1px solid var(--secondary-color);
@@ -352,6 +350,10 @@ a.open-source-link:hover {
   }
   .about-content {
     height: auto;
+  }
+  .about-desc {
+    margin: 15px;
+    padding-left: 0;
   }
   .about-pic {
     height: auto;
