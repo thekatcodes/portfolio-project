@@ -92,7 +92,12 @@ h1 {
   line-height: 33px;
   color: #7d77a6;
 }
-
+.about-content {
+  height: 91vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .about-pic {
   object-fit: cover;
   max-width: 400px;
@@ -344,6 +349,9 @@ a.open-source-link:hover {
   .center-content {
     display: flex;
     justify-content: center !important;
+  }
+  .about-content {
+    height: auto;
   }
   .about-pic {
     height: auto;
