@@ -92,6 +92,16 @@ h1 {
   line-height: 33px;
   color: #7d77a6;
 }
+
+.about-pic {
+  object-fit: cover;
+  max-width: 400px;
+  height: auto;
+
+  background: url(about-me-pic.jpg);
+  box-shadow: 0px 0px 13px 6px rgba(255, 255, 255, 0.51);
+  border-radius: 74px;
+}
 .profile-pic {
   object-fit: cover;
   width: 179px;
@@ -148,14 +158,23 @@ a.arrow-link {
   background-color: white;
   width: 100%;
 }
-#summary-title {
+.about-style {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#about-header {
+  position: relative;
+  border-bottom: 2px solid white;
+  margin: 50px auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#summary-header {
   padding: 100px;
   padding-bottom: 0;
   margin-bottom: 50px;
   border-bottom: 1px solid var(--secondary-color);
-}
-h1 .summary-header-line {
-  border: 1px solid var(--secondary-color);
 }
 .project-thumbnail {
   box-sizing: border-box;
@@ -176,6 +195,9 @@ p {
   font-family: "Nunito";
   font-size: 25px;
   color: var(--primary-color);
+}
+.about-desc {
+  max-width: 1000px;
 }
 .link-icons {
   word-spacing: var(--icon-spacing);
@@ -213,7 +235,8 @@ p {
   column-width: 660px;
 }
 
-.btn-portfolio {
+.btn-portfolio,
+.btn-portfolio-about {
   margin: 90px auto;
   margin-bottom: 50px;
   font-family: "Nunito";
@@ -224,16 +247,19 @@ p {
   border-radius: 50px;
   border: none;
 }
-.btn-portfolio:hover {
+.btn-portfolio:hover,
+.btn-portfolio-about:hover {
   background-color: var(--hover-color);
   color: var(--primary-color);
   font-weight: 500;
   transition: all 150ms ease-in-out;
 }
-#portfolio-btn-link {
+#portfolio-btn-link,
+#portfolio-btn-about {
   text-decoration: none;
   color: white;
 }
+
 .scroll-top {
   display: block;
   text-align: right;
@@ -261,8 +287,12 @@ p {
     transform: translate(0, -0px);
   }
 }
+/* p {
+  text-align: center;
+} */
 .footer {
   padding: 15px;
+  border-top: 1px solid var(--secondary-color);
 }
 .footer-text {
   font-family: "Nunito";
@@ -299,7 +329,7 @@ a.open-source-link:hover {
   padding-right: 30px;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 992px) {
   .footer-text,
   .footer-icons {
     text-align: center;
@@ -310,6 +340,16 @@ a.open-source-link:hover {
   }
   .footer-icons {
     margin-top: 12px;
+  }
+  .center-content {
+    display: flex;
+    justify-content: center !important;
+  }
+  .about-pic {
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 30px;
   }
 }
 
@@ -325,10 +365,6 @@ a.open-source-link:hover {
   .description,
   .footer-text {
     font-size: 16px;
-  }
-  #summary-title {
-    padding-bottom: 0;
-    padding-top: 50px;
   }
   .link-icons {
     text-align: center;
