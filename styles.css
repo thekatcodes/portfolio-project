@@ -172,6 +172,7 @@ a.arrow-link {
   position: relative;
   border-bottom: 2px solid white;
   margin: 50px auto;
+  margin-bottom: 130px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -253,6 +254,9 @@ p {
   border-radius: 50px;
   border: none;
 }
+.btn-portfolio-about {
+  margin-top: 130px;
+}
 .btn-portfolio:hover,
 .btn-portfolio-about:hover {
   background-color: var(--hover-color);
@@ -333,6 +337,9 @@ a.open-source-link:hover {
 }
 
 @media (max-width: 992px) {
+  .btn-portfolio-about {
+    margin-top: 15px;
+  }
   .footer-text,
   .footer-icons {
     text-align: center;
@@ -343,6 +350,9 @@ a.open-source-link:hover {
   }
   .footer-icons {
     margin-top: 12px;
+  }
+  #about-header {
+    margin-bottom: 50px;
   }
   .center-content {
     display: flex;
@@ -366,7 +376,7 @@ a.open-source-link:hover {
 @media (max-width: 767px) {
   h1,
   h2 {
-    font-size: 30px;
+    font-size: 33px;
     white-space: nowrap;
     text-align: center;
     margin-top: 0;
