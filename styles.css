@@ -176,9 +176,13 @@ a.arrow-link {
   padding-left: 30px;
   padding-right: 30px;
 }
+.summary-head {
+  flex-direction: column;
+  align-items: center;
+}
 #summary-header {
-  padding: 100px;
-  padding-bottom: 0;
+  width: fit-content;
+  padding: 50px 0 0;
   margin-bottom: 50px;
   border-bottom: 1px solid var(--secondary-color);
 }
@@ -299,11 +303,11 @@ p {
 }
 .footer {
   padding: 15px;
-  border-top: 1px solid var(--secondary-color);
+  border-top: 1px solid white;
 }
 .footer-text {
   font-family: "Nunito";
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
   line-height: 33px;
   color: var(--primary-color);
@@ -398,4 +402,16 @@ a.open-source-link:hover {
   p {
     font-size: 15px;
   }
+  .star-symbol-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+    line-height: 125%;
+    color: white;
+    margin-top: 130px;
+    margin-left: 30px;
+  }
 }
+
+/* anything smaller than width 410, weird strip on the right*/
