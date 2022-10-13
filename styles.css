@@ -92,16 +92,13 @@ h1 {
   line-height: 33px;
   color: #7d77a6;
 }
-.about-content,
-.project-portfolio {
+.about-content {
   height: 91vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-/* .project-portfolio {
-  height: auto;
-} */
+
 .about-pic {
   object-fit: cover;
   max-width: 400px;
@@ -214,8 +211,14 @@ p {
   max-width: 850px;
   padding-left: 25px;
 }
-.link-icons {
+.link-icons,
+.tech-icons {
   word-spacing: var(--icon-spacing);
+  margin-top: 30px;
+}
+.tech-icons {
+  font-size: 30px;
+  color: var(--primary-color);
 }
 .github-icon,
 .ext-icon,
@@ -378,7 +381,9 @@ a.open-source-link:hover {
     display: flex;
     justify-content: center !important;
   }
-  .about-content,
+  .about-content {
+    height: 91vh;
+  }
   .project-portfolio {
     height: auto;
   }
@@ -393,6 +398,14 @@ a.open-source-link:hover {
     max-width: 200px;
     margin-bottom: 30px;
   }
+}
+.soon-border {
+  border-bottom: 3px solid white;
+}
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (min-width: 992px) {
   .portfolio-scroll-top {
@@ -412,7 +425,10 @@ a.open-source-link:hover {
   .footer-text {
     font-size: 16px;
   }
-  .link-icons {
+  .link-icons,
+  .tech-icons,
+  .soon-border,
+  p {
     text-align: center;
   }
 }
@@ -435,5 +451,3 @@ a.open-source-link:hover {
     margin-left: 30px;
   }
 }
-
-/* anything smaller than width 410, weird strip on the right*/
