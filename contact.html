@@ -43,8 +43,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home </a>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
@@ -53,21 +55,75 @@
             <a class="nav-link" href="portfolio.html">Portfolio</a>
           </li>
 
-          <li class="nav-item active">
-            <a class="nav-link" href="contact.html"
-              >Contact<span class="sr-only">(current)</span></a
-            >
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="contact-content">
-      <h1>Let's talk!</h1>
-      <h2>
-        Want to get in touch? I'd love to hear from you. Here's how you can
-        reach me...
-      </h2>
-      <button>Email me</button> <button>LinkedIn</button>
-    </div>
+    <section class="contact-content">
+      <div class="header-text">
+        <h1 class="intro">Let’s talk!</h1>
+        <h2 class="description">
+          Want to get in touch? I'd love to hear from you. <br />Here's how you
+          can reach me...
+        </h2>
+      </div>
+
+      <div class="contact-buttons d-flex">
+        <a
+          href="mailto:katieliu59@gmail.com"
+          target="_blank"
+          class="email-button"
+          >Email me</a
+        >
+        <a
+          href="https://www.linkedin.com/in/katiejxliu/"
+          target="_blank"
+          class="linkedin-button"
+          >LinkedIn</a
+        >
+      </div>
+    </section>
+    <footer class="fixed-footer">
+      <div class="container footer-container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6 pt-3">
+            <p class="footer-text">
+              Designed and developed with 💜 by
+              <a
+                href="https://www.linkedin.com/in/katiejxliu/"
+                target="_blank"
+                class="open-source-link"
+                ><b>Katie Liu</b></a
+              >, and
+              <a
+                href="https://github.com/thekatcodes/portfolio-project"
+                target="_blank"
+                class="open-source-link"
+              >
+                <b>open-sourced</b>
+              </a>
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="footer-icons">
+              <a href="https://github.com/thekatcodes" target="_blank">
+                <i class="footer-github github-icon fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/katiejxliu/" target="_blank"
+                ><i class="footer-linkedin fa-brands fa-linkedin"></i
+              ></a>
+              <a href="mailto:katieliu59@gmail.com"
+                ><i class="footer-email fa-solid fa-envelope"></i
+              ></a>
+              <a href="files\KatieLiu_CV_ENG_2022.pdf" target="_blank">
+                <i class="footer-cv fa-solid fa-file-lines"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

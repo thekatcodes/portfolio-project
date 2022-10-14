@@ -78,14 +78,18 @@ h1 {
   font-size: var(--heading-font-size);
   text-align: center;
   line-height: 75px;
-
   color: var(--primary-color);
 }
-.intro {
+.intro,
+.contact-header {
   border-bottom: 1px solid white;
 }
-
-.description {
+.contact-header {
+  display: flex;
+  justify-content: center;
+}
+.description,
+.contact-text {
   font-family: "Nunito";
   font-size: 24px;
   text-align: center;
@@ -94,9 +98,15 @@ h1 {
 }
 .about-content {
   height: 91vh;
+  align-items: center;
+}
+.about-content,
+.contact-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 91vh;
 }
 
 .about-pic {
@@ -264,7 +274,9 @@ p {
 }
 
 .btn-portfolio,
-.btn-portfolio-about {
+.btn-portfolio-about,
+.email-button,
+.linkedin-button {
   margin: 90px auto;
   margin-bottom: 50px;
   font-family: "Nunito";
@@ -285,10 +297,31 @@ p {
   font-weight: 500;
   transition: all 150ms ease-in-out;
 }
-#portfolio-btn-link,
-#portfolio-btn-about {
+#portfolio-button,
+#portfolio-button-about {
   text-decoration: none;
   color: white;
+  width: 215px;
+}
+.email-button {
+  margin-right: 50px;
+}
+.linkedin-button {
+  margin-left: 50px;
+}
+.email-button,
+.linkedin-button {
+  text-align: center;
+  background-color: white;
+  color: var(--primary-color);
+  width: 215px;
+}
+.email-button:hover,
+.linkedin-button:hover {
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  color: white;
+  transition: all 150ms ease-in-out;
 }
 
 .scroll-top,
@@ -320,7 +353,7 @@ p {
     transform: translate(0, -0px);
   }
 }
-.footer {
+footer {
   padding: 15px;
   border-top: 1px solid white;
 }
@@ -358,7 +391,14 @@ a.open-source-link:hover {
   padding-left: 30px;
   padding-right: 30px;
 }
-
+.soon-border {
+  border-bottom: 3px solid white;
+}
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media (max-width: 992px) {
   .btn-portfolio-about {
     margin-top: 15px;
@@ -382,7 +422,7 @@ a.open-source-link:hover {
     justify-content: center !important;
   }
   .about-content {
-    height: auto;
+    height: 88vh;
   }
   .about-pic {
     max-width: 250px;
@@ -390,7 +430,6 @@ a.open-source-link:hover {
   .project-portfolio {
     height: auto;
   }
-
   .about-desc {
     margin: 15px;
     padding-left: 0;
@@ -401,18 +440,27 @@ a.open-source-link:hover {
     max-width: 200px;
     margin-bottom: 30px;
   }
+  .contact-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .email-button,
+  .linkedin-button {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }
-.soon-border {
-  border-bottom: 3px solid white;
-}
-.coming-soon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 @media (min-width: 992px) {
   .portfolio-scroll-top {
     display: none;
+  }
+  .about-content {
+    height: 91vh;
   }
 }
 @media (max-width: 767px) {
@@ -452,5 +500,8 @@ a.open-source-link:hover {
     color: white;
     margin-top: 130px;
     margin-left: 30px;
+  }
+  .about-content {
+    height: auto;
   }
 }
