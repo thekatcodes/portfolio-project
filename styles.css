@@ -382,7 +382,10 @@ a.open-source-link:hover {
     justify-content: center !important;
   }
   .about-content {
-    height: 91vh;
+    height: auto;
+  }
+  .about-pic {
+    max-width: 250px;
   }
   .project-portfolio {
     height: auto;
@@ -392,7 +395,7 @@ a.open-source-link:hover {
     margin: 15px;
     padding-left: 0;
   }
-  .about-pic {
+  img .about-pic {
     height: auto;
     width: 100%;
     max-width: 200px;
