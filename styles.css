@@ -96,17 +96,12 @@ h1 {
   line-height: 33px;
   color: #7d77a6;
 }
-.about-content {
-  height: 91vh;
-  align-items: center;
-}
 .about-content,
 .contact-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 91vh;
 }
 .contact-content {
   height: 100vh;
@@ -290,6 +285,9 @@ p {
   border-radius: 50px;
   border: none;
 }
+.linkedin-button {
+  padding: 25px 43px;
+}
 .btn-portfolio-about {
   margin-top: 130px;
 }
@@ -309,9 +307,6 @@ p {
 .email-button {
   margin-right: 50px;
 }
-.linkedin-button {
-  margin-left: 50px;
-}
 .email-button,
 .linkedin-button {
   text-align: center;
@@ -326,7 +321,14 @@ p {
   color: white;
   transition: all 150ms ease-in-out;
 }
-
+.fa-chevron-right {
+  margin: 90px auto;
+  margin-bottom: 50px;
+  padding: 25px 15px;
+  font-size: 30px;
+  line-height: 22px;
+  color: white;
+}
 .scroll-top,
 .portfolio-scroll-top {
   display: block;
@@ -424,11 +426,14 @@ a.open-source-link:hover {
     display: flex;
     justify-content: center !important;
   }
+  #about-header {
+    margin-bottom: 20px;
+  }
   .about-content {
-    height: 88vh;
+    height: auto;
   }
   .about-pic {
-    max-width: 200px;
+    max-width: 250px;
   }
   .project-portfolio {
     height: auto;
@@ -448,9 +453,12 @@ a.open-source-link:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-right: 70px;
+    margin-bottom: 40px;
   }
   .email-button,
-  .linkedin-button {
+  .linkedin-button,
+  .fa-chevron-right {
     margin-left: 0;
     margin-right: 0;
     margin-top: 10px;
@@ -472,7 +480,17 @@ a.open-source-link:hover {
     display: none;
   }
   .about-content {
-    height: 91vh;
+    height: 100vh;
+  }
+  .about-navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  .about-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
