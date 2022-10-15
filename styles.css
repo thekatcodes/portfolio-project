@@ -422,13 +422,9 @@ a.open-source-link:hover {
   align-items: center;
 }
 @media (max-width: 1366px) {
+  .contact-footer,
   .contact-navbar {
-    width: 100%;
-    top: 0;
-  }
-  .contact-footer {
-    bottom: 0;
-    width: 100%;
+    position: relative;
   }
   .contact-buttons {
     margin-bottom: 0;
@@ -570,7 +566,7 @@ a.open-source-link:hover {
     font-size: 30px;
     line-height: 125%;
     color: white;
-    margin-bottom: 170px;
+    margin-bottom: 70px;
     margin-left: 30px;
   }
   .about-content {
