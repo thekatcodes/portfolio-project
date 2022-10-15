@@ -55,7 +55,8 @@ body {
   margin-top: 150px;
   margin-left: 110px;
 }
-.star-symbol-bottom {
+.star-symbol-bottom,
+.contact-star-symbol-bottom {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -270,7 +271,12 @@ p {
 .col-lg-6 {
   column-width: 660px;
 }
-
+.email,
+.linkedin {
+  justify-content: center;
+  display: flex;
+  margin-right: 30px;
+}
 .btn-portfolio,
 .btn-portfolio-about,
 .email-button,
@@ -328,6 +334,7 @@ p {
   font-size: 30px;
   line-height: 22px;
   color: white;
+  opacity: 0.7;
 }
 .scroll-top,
 .portfolio-scroll-top {
@@ -360,6 +367,7 @@ p {
 }
 footer {
   padding: 15px;
+  padding-bottom: 5px;
   border-top: 1px solid white;
 }
 .footer-text {
@@ -453,7 +461,6 @@ a.open-source-link:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-right: 70px;
     margin-bottom: 40px;
   }
   .email-button,
@@ -463,6 +470,9 @@ a.open-source-link:hover {
     margin-right: 0;
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+  .fa-chevron-right {
+    padding-left: 0;
   }
 }
 .contact-navbar {
