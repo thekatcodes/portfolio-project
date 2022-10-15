@@ -232,7 +232,7 @@ p {
 .link-icons,
 .tech-icons {
   word-spacing: var(--icon-spacing);
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .tech-icons {
   font-size: 30px;
@@ -421,6 +421,7 @@ a.open-source-link:hover {
   flex-direction: column;
   align-items: center;
 }
+
 @media (max-width: 1366px) {
   .contact-footer,
   .contact-navbar {
@@ -439,12 +440,17 @@ a.open-source-link:hover {
   }
 }
 @media (max-width: 992px) {
+  .portfolio-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
   .btn-portfolio-about {
     margin-top: 15px;
   }
   .footer-text,
-  .footer-icons,
-  .tech-icons {
+  .footer-icons {
     text-align: center;
   }
   .footer-text {
@@ -522,7 +528,6 @@ a.open-source-link:hover {
     font-size: 16px;
   }
   .link-icons,
-  .tech-icons,
   .soon-border,
   p {
     text-align: center;
