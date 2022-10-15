@@ -107,7 +107,16 @@ h1 {
 .contact-content {
   height: 100vh;
 }
-
+.contact-navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.contact-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 .about-pic {
   object-fit: cover;
   max-width: 400px;
@@ -412,6 +421,27 @@ a.open-source-link:hover {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 1366px) {
+  .contact-navbar {
+    width: 100%;
+    top: 0;
+  }
+  .contact-footer {
+    bottom: 0;
+    width: 100%;
+  }
+  .contact-buttons {
+    margin-bottom: 0;
+  }
+  .about-navbar {
+    width: 100%;
+    top: 0;
+  }
+  .about-footer {
+    bottom: 0;
+    width: 100%;
+  }
+}
 @media (max-width: 992px) {
   .btn-portfolio-about {
     margin-top: 15px;
@@ -475,32 +505,10 @@ a.open-source-link:hover {
     padding-left: 0;
   }
 }
-.contact-navbar {
-  position: absolute;
-  width: 100%;
-  top: 0;
-}
-.contact-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+
 @media (min-width: 992px) {
   .portfolio-scroll-top {
     display: none;
-  }
-  .about-content {
-    height: 100vh;
-  }
-  .about-navbar {
-    position: absolute;
-    width: 100%;
-    top: 0;
-  }
-  .about-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
   }
 }
 @media (max-width: 767px) {
