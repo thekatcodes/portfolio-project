@@ -443,7 +443,8 @@ a.open-source-link:hover {
     margin-top: 15px;
   }
   .footer-text,
-  .footer-icons {
+  .footer-icons,
+  .tech-icons {
     text-align: center;
   }
   .footer-text {
