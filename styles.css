@@ -108,6 +108,9 @@ h1 {
   align-items: center;
   height: 91vh;
 }
+.contact-content {
+  height: 100vh;
+}
 
 .about-pic {
   object-fit: cover;
@@ -415,7 +418,7 @@ a.open-source-link:hover {
     margin-top: 12px;
   }
   #about-header {
-    margin-bottom: 50px;
+    margin-bottom: px;
   }
   .center-content {
     display: flex;
@@ -425,7 +428,7 @@ a.open-source-link:hover {
     height: 88vh;
   }
   .about-pic {
-    max-width: 250px;
+    max-width: 200px;
   }
   .project-portfolio {
     height: auto;
@@ -454,7 +457,16 @@ a.open-source-link:hover {
     margin-bottom: 20px;
   }
 }
-
+.contact-navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.contact-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 @media (min-width: 992px) {
   .portfolio-scroll-top {
     display: none;
@@ -481,6 +493,19 @@ a.open-source-link:hover {
   .soon-border,
   p {
     text-align: center;
+  }
+  .linkedin-button {
+    margin-bottom: 50px;
+  }
+  .contact-star-symbol-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 50px;
+    line-height: 125%;
+    color: white;
+    margin-bottom: 170px;
+    margin-right: 10px;
   }
 }
 @media (max-width: 575px) {
