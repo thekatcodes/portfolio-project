@@ -198,13 +198,17 @@ a.arrow-link {
   justify-content: center;
   align-items: flex-end;
 }
-#about-header {
+#about-header, #skills-header{
   position: relative;
   border-bottom: 2px solid white;
   margin: 50px auto;
   margin-bottom: 130px;
   padding-left: 30px;
   padding-right: 30px;
+}
+#skills-header {
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
 .summary-head {
   flex-direction: column;
@@ -240,6 +244,14 @@ p {
   max-width: 850px;
   padding-left: 25px;
 }
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
 .link-icons,
 .tech-icons {
   word-spacing: var(--icon-spacing);
@@ -471,14 +483,14 @@ a.open-source-link:hover {
   .footer-icons {
     margin-top: 12px;
   }
-  #about-header {
+  #about-header, #skills-header{
     margin-bottom: px;
   }
   .center-content {
     display: flex;
     justify-content: center !important;
   }
-  #about-header {
+  #about-header, #skills-header {
     margin-bottom: 20px;
   }
   .about-content {
